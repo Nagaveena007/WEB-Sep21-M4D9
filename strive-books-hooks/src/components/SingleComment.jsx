@@ -1,5 +1,5 @@
 import { Button, ListGroup } from "react-bootstrap";
-
+import { RiDeleteBin6Fill } from "react-icons/ri";
 const deleteComment = async (asin) => {
   try {
     let response = await fetch(
@@ -25,12 +25,8 @@ const deleteComment = async (asin) => {
 const SingleComment = ({ comment }) => (
   <ListGroup.Item>
     {comment.comment}
-    <Button
-      variant="danger"
-      className="ml-2"
-      onClick={() => deleteComment(comment._id)}
-    >
-      D
+    <Button variant="danger" className="ml-4">
+      <RiDeleteBin6Fill onClick={() => deleteComment(comment._id)} />
     </Button>
   </ListGroup.Item>
 );

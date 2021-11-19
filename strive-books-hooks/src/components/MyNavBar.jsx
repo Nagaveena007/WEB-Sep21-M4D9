@@ -35,7 +35,7 @@ const MyNavBar = () => {
             <NavDropdown.Item href="#action/3.4">non-fiction</NavDropdown.Item>
           </NavDropdown>
         </Nav>
-        <Button variant="outline-success" onClick={() => navigate("/register")}>
+        <Button variant="outline-light" onClick={() => navigate("/register")}>
           Register
         </Button>
       </Navbar.Collapse>
